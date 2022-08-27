@@ -18,6 +18,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get("numbers", [RandNumController::class, 'index']);
+Route::get("numbers", [RandNumController::class, 'index'])->name('numbers.index');;
 Route::post("/numbers", [RandNumController::class, 'generate']);
 Route::get("numbers/{id}", [RandNumController::class, 'retrieve']);

@@ -21,7 +21,7 @@ class RandNumController extends Controller
 
         $number->number = $randNum;
         $number->save();
-        return $number;
+        return redirect()->route('numbers.index');
     }
 
     public function retrieve($id)

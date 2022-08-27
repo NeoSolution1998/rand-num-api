@@ -14,5 +14,5 @@ php artisan schedule:work - локальный запуск планировщи
 Адреса методов:
 - GET http://localhost:8000/api/numbers/{id} - при запросе получаем число и всю информацию из бд в формате json.
 - GET http://localhost:8000/api/numbers - при запросе получаем все числа в формате json.
-- POST http://localhost:8000/api/numbers - при запросе генерируется число и происходит редирект по адресу /numbers/{id}.
+- POST http://localhost:8000/api/numbers - при запросе генерируется число и происходит редирект по адресу /numbers (список всех чисел).
 - GET http://localhost:8000/send - ручная отправка письма со всеми сгенерированными числами за сутки
