@@ -20,4 +20,3 @@ Route::get('/', function () {
 });
 
 Route::get('send', [MailController::class, 'index']);
-Route::get('report', [RandNumController::class, 'report']);
