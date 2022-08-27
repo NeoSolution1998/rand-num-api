@@ -11,7 +11,7 @@ class RandNumController extends Controller
     public function index()
     {
         $numbers = RandNum::all();
-        return $numbers->toJson();
+        return $numbers;
     }
 
     public function generate()
@@ -21,13 +21,13 @@ class RandNumController extends Controller
 
         $number->number = $randNum;
         $number->save();
-        return $number->toJson();
+        return $number;
     }
 
     public function retrieve($id)
     {
         $number = RandNum::findOrFail($id);
-        return $number->toJson();
+        return $number;
     }
 
     public function report()
